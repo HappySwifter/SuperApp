@@ -11,34 +11,15 @@ app.get('/', function(req, res){
 });
 
 io.on('connection', function(socket){
+
   socket.on('chat message', function(msg){
     io.emit('chat message', msg);
   });
-  socket.on('getUsers', function(socket) {
 
-
-
-    db.cypher({
-      query: 'MATCH (user:User) RETURN user',
-      params: {
-        email: 'alice@example.com',
-      },
-    }, callback);
-
-    function callback(err, results) {
-      if (err) throw err;
-      var result = results[1];
-      if (!result) {
-        console.log('No user found.');
-        io.emit('users', 'No user found.');
-      } else {
-        var user = result['user'];
-        console.log(user);
-        io.emit('users', user);
-      }
-    };
-
+  socket.on('getUsers', function() {
+    db.cypher({ query: 'MATCH (user:User) RETURN user' }, callback);
   })
+
 });
 
 http.listen(3000, function(){
@@ -47,3 +28,15 @@ http.listen(3000, function(){
 
 
 
+function callback(err, results) {
+  if (err) throw err;
+  var result = results[1];
+  if (!result) {
+    console.log('No user found.');
+    io.emit('users', 'No user found.');
+  } else {
+    var user = result['user'];
+    console.log(user);
+    io.emit('users', user);
+  }
+};

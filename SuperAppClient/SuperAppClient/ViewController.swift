@@ -30,6 +30,7 @@ class ViewController: UIViewController {
         }
         
         socket.on("users") { (data, ack) in
+            self.data.removeAll()
             print(data)
             for user in data {
                 if let userProp = user["properties"], let name = userProp!["name"] as? String {
