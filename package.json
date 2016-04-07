@@ -1,9 +1,9 @@
 {
-  "name": "chatrooms",
+  "name": "socket-chat-example",
   "version": "0.0.1",
-  "description": "Minimalist multiroom chat server",
+  "description": "my first socket.io app",
   "dependencies": {
-    "socket.io": "~0.9.6",
-     "mime": "~1.2.7"
+    "express": "4.10.2",
+    "socket.io": "1.2.0"
   }
 }
