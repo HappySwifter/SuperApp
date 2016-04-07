@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9253fc84-19f2-46fa-947d-c38c9496ba0e" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/runConfigurations/bin_www.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/server.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="9253fc84-19f2-46fa-947d-c38c9496ba0e" name="Default" comment="" />
     <ignored path="SuperApp.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -177,15 +174,15 @@
       <updated>1460025177816</updated>
       <workItem from="1460025664841" duration="79000" />
       <workItem from="1460025841562" duration="400000" />
-      <workItem from="1460026245281" duration="437000" />
+      <workItem from="1460026245281" duration="1007000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="916000" />
+    <option name="totallyTimeSpent" value="1486000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="86" y="23" width="1400" height="972" extended-state="0" />
+    <frame x="86" y="23" width="1400" height="972" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945612" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
